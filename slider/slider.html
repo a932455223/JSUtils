@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <title>普通的图片轮播</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--demo展示所用css，不用关心 begin-->
+    <link rel="stylesheet" type="text/css" href="../assets/reset.css" />
+    <!--demo展示所用css end-->
+    <!--组件依赖css begin-->
+    <link rel="stylesheet" type="text/css" href="../assets/slider/slider.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/slider/slider.default.css" /> <!--皮肤文件，若不使用该皮肤，可以不加载-->
+    <!--组件依赖css end-->
+    <!--组件依赖js begin-->
+    <script type="text/javascript" src="../build/zepto.js"></script>
+    <script type="text/javascript" src="../build/gmu.js"></script>
+    <script type="text/javascript" src="../build/slider/slider.js"></script>
+    <!--组件依赖js end-->
+</head>
+<body>
+<div id="slider">
+    <div>
+        <a href="#"><img lazyload="../assets/slider/images/image1.png"></a>
+        <p>1,让Coron的太阳把自己晒黑—小天</p>
+    </div>
+    <div>
+        <a href="#"><img lazyload="../assets/slider/images/image2.png"></a>
+        <p>2,让Coron的太阳把自己晒黑—小天</p>
+    </div>
+    <div>
+        <a href="#"><img lazyload="../assets/slider/images/image3.png"></a>
+        <p>3,让Coron的太阳把自己晒黑—小天</p>
+    </div>
+    <div>
+        <a href="#"><img lazyload="../assets/slider/images/image4.png"></a>
+        <p>4,让Coron的太阳把自己晒黑—小天</p>
+    </div>
+</div>
+
+<script>
+    //创建slider组件
+    $('#slider').slider( { imgZoom: true });
+</script>
+</body>
+</html>
