@@ -11,3 +11,8 @@ build文件夹中的文件中得js文件，是打包后的文件，也是大家�
 slider文件夹下得slider.js是gmu项目中得slider所有文件打包后的文件。关于slider的使用，请参考文件中的demo（html文件在slider里）
 
 ![xmind](xmind.jpg)
+
+###imglazyload plugin
+			<script type="text/javascript" src="../build/zepto.js"></script>
+			<script type="text/javascript" src="../build/gmu.js"></script>
+			<script type="text/javascript" src="../src/extend/event.scrollStop.js"></script><!--注意，此文件依赖gmu throttle方法，必须在gmu之后引用-->
