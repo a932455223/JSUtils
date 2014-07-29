@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <title>普通对话框</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--demo展示所用css，不用关心 begin-->
+    <link rel="stylesheet" type="text/css" href="../assets/reset.css" /> 
+    <!--demo展示所用css end-->
+
+    <!--组件依赖css begin-->
+    <link rel="stylesheet" type="text/css" href="../assets/dialog/dialog.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/dialog/dialog.iOS7.css" /> <!--皮肤文件，若不使用该皮肤，可以不加载-->
+    <!--组件依赖css end-->
+
+    <!--demo展示所用css，不用关心 begin-->
+    <link rel="stylesheet" type="text/css" href="../assets/dialog/dialog_demo.css" />
+    <!--demo展示所用css end-->
+
+
+    <!--组件依赖js begin-->
+    <script type="text/javascript" src="../build/zepto.js"></script>
+    <script type="text/javascript" src="../build/gmu.js"></script>
+    <script type="text/javascript" src="../build/dialog/dialog.js"></script>
+    <!--组件依赖js end-->
+
+</head>
+<body>
+
+<div class="article">
+    <div class="btns">
+        <a id="btn1" class="ui-btn ui-btn-text-only" style="-webkit-tap-highlight-color: rgba(255, 255, 255, 0);"><span class="ui-btn-text">登录</span></a>
+    </div>
+
+    <div id="dialog1" title="登陆提示">
+        <p>请使用百度账号登录后, 获得更多个性化特色功能</p>
+    </div>
+</div>
+<script>
+	//width——对话框宽度，默认300px
+	//closeBtn——对话框关闭按钮
+	//autoOpen——自动弹出
+    //setup模式
+    $('#dialog1').dialog({
+        autoOpen: false,
+        closeBtn: false,
+        buttons: {
+            '取消': function(){
+                this.close();
+            },
+            '确定': function(){
+                this.close();
+            }
+        }
+    });
+
+
+
+    $('#btn1').click(function(){
+        $('#dialog1').dialog('open'); 
+    });
+</script>
+</body>
+</html>
