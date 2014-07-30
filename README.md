@@ -15,4 +15,12 @@ slider文件夹下得slider.js是gmu项目中得slider所有文件打包后的�
 ###imglazyload plugin
 			<script type="text/javascript" src="../build/zepto.js"></script>
 			<script type="text/javascript" src="../build/gmu.js"></script>
-			<script type="text/javascript" src="../src/extend/event.scrollStop.js"></script><!--注意，此文件依赖gmu throttle方法，必须在gmu之后引用-->
+			<!--@event.scrollstop.js注意，此文件依赖gmu throttle方法，必须在gmu之后引用-->
+			<script type="text/javascript" src="../src/extend/event.scrollStop.js"></script>
+			
+###popover plugin
+		    $('#btn1').popover({
+			//@arrow是否有箭头，默认显示
+	    	arrow:false,
+    	    content: 'Hello world!'
+    		});
